@@ -29,7 +29,7 @@ to classify (add classes). You do not need to classify all `<a/>`, for example, 
 
 Since this plugin does not do anything about the representation, you will need to take care of that part based on the classes added by this plugin. You can read the source code of [index.html][], especially the CSS part.
 
-[index.html]: https://github.com/livibetter/jquery.link.classifer.js/blob/master/index.html
+[index.html]: https://github.com/livibetter/jquery.link.classifier.js/blob/master/index.html
 
 The reason this plugin does not do those thing is, every site has different need and style. Even for the icon of external link, one may not fit another site. Do you use image or webfont icon or simple text? It vary very much. Besides, where to host images or webfonts? These are better left to website developer to take care.
 
@@ -37,7 +37,7 @@ The reason this plugin does not do those thing is, every site has different need
 
 You can manipulate `$.linkcls.sites` to add or to remove what you want or you don't want, read [source code][] for the default sites.
 
-[source code]: https://github.com/livibetter/jquery.link.classifer.js/blob/master/jquery.link.classifier.js
+[source code]: https://github.com/livibetter/jquery.link.classifier.js/blob/master/jquery.link.classifier.js
 
 Classes
 -------
@@ -66,6 +66,6 @@ License
 
 It is licensed under the MIT License, see [COPYING][] file.
 
-[COPYING]: https://github.com/livibetter/jquery.link.classifer.js/blob/master/COPYING
+[COPYING]: https://github.com/livibetter/jquery.link.classifier.js/blob/master/COPYING
 
     Copyright (c) 2012 Yu-Jie Lin
