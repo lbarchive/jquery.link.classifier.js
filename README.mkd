@@ -1,0 +1,71 @@
+jQuery Link Classifier
+======================
+
+jQuery Link Classifier adds classes to links based on their URLs. The most possible usage is for identifying external links, like links listed in External links section on Wikipedia.
+
+**Note**: This plugin does nothing with representation or visualization of link, it only adds classes, and that's all what it does. You will need to handle CSS and/or JavaScript on your own.
+
+You can see some [possible usage][example].
+
+[example]: http://livibetter.github.com/jquery.link.classifier.js
+
+Usage
+-----
+
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://livibetter.github.com/jquery.link.classifier.js/jquery.link.classifier.min.js"></script>
+```
+
+Simply call:
+
+```js
+$('a').linkcls()
+```
+
+to classify (add classes). You do not need to classify all `<a/>`, for example, you can do `$('#some-section a').linkcls()`. If new links are created dynamically, just call `.linkcls()` upon those when created.
+
+### CSS and additional JavaScript
+
+Since this plugin does not do anything about the representation, you will need to take care of that part based on the classes added by this plugin. You can read the source code of [index.html][], especially the CSS part.
+
+[index.html]: https://github.com/livibetter/jquery.link.classifer.js/blob/master/index.html
+
+The reason this plugin does not do those thing is, every site has different need and style. Even for the icon of external link, one may not fit another site. Do you use image or webfont icon or simple text? It vary very much. Besides, where to host images or webfonts? These are better left to website developer to take care.
+
+### Sites
+
+You can manipulate `$.linkcls.sites` to add or to remove what you want or you don't want, read [source code][] for the default sites.
+
+[source code]: https://github.com/livibetter/jquery.link.classifer.js/blob/master/jquery.link.classifier.js
+
+Classes
+-------
+
+### Relation of a page
+
+  * `internal`: link is within same hostname.
+  * `external`: link is outside of current page's hostname.
+  * `in-page`: link is within same page, linked by `#hash`.
+
+### File type
+
+This plugin simply checks if there is any file extension presents, note that this is not accurate. `foo.jpg` and `bar.mp3` will get `jpg` and `mp3` as classes, respectively.
+
+### Sites
+
+There are predefined regular expressions for a few popular websites, please read the JavaScript [source code][].
+
+Help and Support
+----------------
+
+Please use issues to report bugs or to request features. Feel free to fork and to open pull request on anything can improve this project, even a typo fix is very welcome.
+
+License
+-------
+
+It is licensed under the MIT License, see [COPYING][] file.
+
+[COPYING]: https://github.com/livibetter/jquery.link.classifer.js/blob/master/COPYING
+
+    Copyright (c) 2012 Yu-Jie Lin
