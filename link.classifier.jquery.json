@@ -1,0 +1,30 @@
+{
+  "name": "link.classifier",
+  "version": "0.1.0",
+  "title": "Link Classifier",
+  "author": {
+    "name": "Yu-Jie Lin",
+    "email": "livibetter@gmail.com",
+    "url": "http://yjl.im"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/livibetter/jquery.link.classifier.js/blob/master/COPYING"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+
+  "description": "Adding classes to links based on their URLs.",
+  "keywords": [
+    "url",
+    "link",
+    "classifier"
+  ],
+  "homepage": "https://github.com/livibetter/jquery.link.classifier.js",
+  "docs": "https://github.com/livibetter/jquery.link.classifier.js",
+  "demo": "http://livibetter.github.com/jquery.link.classifier.js/",
+  "bugs": "https://github.com/livibetter/jquery.link.classifier.js/issues"
+}
